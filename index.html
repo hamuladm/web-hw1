@@ -4,43 +4,75 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hounter</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
+
     <header class="header">
-        <img class="header-logo" src="./img/Logo.svg" alt="Logo">
-        <nav>
-            <a class="header-link" href="#">About Us</a>
-            <a class="header-link" href="#">Artice</a>
-            <select class="header-markdown"> Property</select>
-            <a class="header-link" href="#">Sign Up</a>
-        </nav>
-        <div class="text-serch">
-        <h1>
-            Find The Place To <br> Live Your Dreams <br> Easily Here
-        </h1>
-        <p>
-            Everything you need about finding your place to live will be here, <br> where it will be easier for you
-        </p>
-        <input type="text">
-        <button type="button"> Search!</button>
-        <img src="./img/fluent_location-16-filled.svg" alt="location-svg">
-        <img class="background-img" src="./img/image_6.jpg" alt="Backgroung">
-        <img class="1kpeople"  src="./img/frame_13.jpg" alt="People">
-        <p>
-            Our partnership
-        </p>
-        <img class="partnership-img" src="img/traveloka_logo_5.jpg">
-        <img class="partnership-img" src="img/traveloka_logo_4.jpg">
-        <img class="partnership-img" src="img/traveloka_logo_3.jpg">
-        <img class="partnership-img" src="img/traveloka_logo_2.jpg">
+        <img src="./img/Color Blur.png" class="color-blur">
+        <div class="header-left-cont">
+            <a href="#">
+                <img src="./img/Logo.svg" class="header-logo">
+            </a>
+            <div class="header-text">
+                <h1 class="header-text-title">
+                    Find The Place To <br>
+                    Live Your Dreams <br>
+                    Easily Here
+                </h1>
+                <p class="header-text-desc">
+                    Everything you need about finding your place to live will be here, <br>
+                    where it will be easier for you
+                </p>
+            </div>
+            <div class="header-search">
+                <img src="./img/fluent_location-16-filled.svg" class="img-loc">
+                <input class="header-input"  type="text" placeholder="Search for the location you want!">
+                <button class="header-search-button" type="button"> Search ></button>
+            </div>
+
+            <div class="header-partneships">
+                <p class="header-partneships-desc">
+                    Our partnership
+                </p>
+                <img class="partnership-img" src="img/traveloka_logo_2.jpg">
+                <img class="partnership-img" src="img/traveloka_logo_3.jpg">
+                <img class="partnership-img" src="img/traveloka_logo_4.jpg">
+                <img class="partnership-img" src="img/traveloka_logo_5.jpg">
+            </div>
+        </div>
+        <div class="header-right-cont">
+            <nav class="header-nav">
+                <ul>
+                    <li><button class="nav-button">About Us</button></li>
+                    <li><button class="nav-button">Article</button></li>
+                    <li><select class="header-markdown">
+                        <option value="property">Property</option>
+                        <option value="houses">Houses</option>
+                    </select></li>
+                    <li><button id="sign-up-button" class="nav-button">Sign Up!</button></li>
+                </ul>
+            </nav>
+            <div class="background-home">
+                <img class="background-img" src="./img/image_6.jpg" alt="Backgroundframe_13.jpg">
+            </div>
+            <div class="kpeoplediv">
+                <img class="kpeople"  src="./img/1K Peoples.svg" alt="People">
+            </div>
+            <div class="kpeoplediv2">
+                <img class="kpeople"  src="./img/1K Peoples 2.png" alt="People">
+            </div>
         </div>
     </header>
+
     <section class="recommendations">
-        <h5>Our recommendation</h5>
-        <h2>Featured House</h2>
-        <div class="navigation">
-            <button type="button"> House</button>
-            <button type="button"> Villa</button>
-            <button type="button"> Apartment</button>
+        <h5 class="rec-subtitle">Our recommendation</h5>
+        <div class="nav-title">
+            <h2 class="rec-title">Featured House</h2>
+            <div class="navigation">
+                <button type="button" class="button-nav" id="house-button"> House</button>
+                <button type="button" class="button-nav"> Villa</button>
+                <button type="button" class="button-nav"> Apartment</button>
+            </div>
         </div>
         <div class="houses">
             <div class="house">
@@ -48,9 +80,9 @@
                 <h4>Roselands House</h4>
                 <h5>$ 35.000.000</h5>
                 <div class="person">
+                    <img src="./img/ellipse_6.jpg">
                     <h5>Dianne Russell</h5>
                     <h6>Manchester, Kentucky</h6>
-                    <img src="./img/ellipse_6.jpg">
                 </div>
             </div>
             <div class="house">
@@ -58,9 +90,9 @@
                 <h4>Woodlandside</h4>
                 <h5>$ 20.000.000</h5>
                 <div class="person">
+                    <img src="./img/ellipse_5.jpg">
                     <h5>Robert Fox</h5>
                     <h6>Dr. San Jose, Dakota</h6>
-                    <img src="./img/ellipse_5.jpg">
                 </div>
             </div>
             <div class="house">
@@ -68,85 +100,119 @@
                 <h4>The Old Lighthouse</h4>
                 <h5>$ 44.000.000</h5>
                 <div class="person">
-                    <h5>Ronald Richards</h5>
-                    <h6>Snata Ana, Illions</h6>
                     <img src="./img/ellipse_4.jpg">
+                    <h5>Ronald Richards</h5>
+                    <h6>Santa Ana, Illions</h6>
                 </div>
             </div>
         </div>
     </section>
     <section class="ready-to-sell">
         <div class="ready-sell">
-            Ready To Sell
+            <h5>Ready To Sell</h5>
         <div class="tour-and-see">
             Let's Tour And See Our House
         </div>
         <div class="ready-sell-desc">
             Houses recommended by our partners that have been <br> curated to become the home of your dreams
         </div>
+        <div class="house-det">
+            <h4>House Detail</h4>
+        </div>
         <div class="house-details">
-            House Detail
             <div class="accomodation">
-                <img src="./img/shape_1.jpg">
-                4 Bedrooms
+                <div class="img-acc">
+                    <img src="./img/shape_1.jpg">
+                </div>
+                <div class="desc-acc">
+                    4 Bedrooms
+                </div>
             </div>
             <div class="accomodation">
-                <img src="./img/car_garage_1.jpg">
-                1 Carport
+                <div class="img-acc">
+                    <img src="./img/car_garage_1.jpg">
+                </div>
+                <div class="desc-acc">
+                    1 Carport
+                </div>
             </div>
             <div class="accomodation">
-                <img src="./img/bath _1.jpg">
-                2 Bathrooms
+                <div class="img-acc">
+                    <img src="./img/bath _1.jpg">
+                </div>
+                <div class="desc-acc">
+                    2 Bathrooms
+                </div>
             </div>
             <div class="accomodation">
-                <img src="./img/stairs_with_handrail_1.jpg">
+                <div class="img-acc">
+                    <img src="./img/stairs_with_handrail_1.jpg">
+                </div>
+                <div class="desc-acc">
                 2 Floors
+                </div>
             </div>
         </div>
-        <div class="person big-person">
-            <h4>Diane Russell</h4>
-            <h5>Manager Director</h5>
-            <img src="./img/big_ellipsse_6.jpg">
+        <div class="big-person">
+            <div class="big-pers-desc">
+                <h4>Diane Russell</h4>
+                <h5>Manager Director</h5>
+            </div>
+            <img src="./img/big_ellipsse_6.jpg" >
+            <button type="button" class="contact-button">Contact Now</button>
         </div>
         </div>
         <div class="video-img">
             <div class="video">
-                <video src="video/video1.mp4" width="320" height="240" controls></video>
+                <video src="video/video1.mp4" width="488" height="416" controls></video>
             </div>
             <div class="img-video">
                 <img src="./img/rectangle_18.jpg">
             </div>
-            <div class="img-video">
+            <div class="img-video2">
                 <img src="./img/rectangle_19.jpg">
             </div>
-            <div class="img-video">
+            <div class="img-video2">
                 <img src="./img/rectangle_20.jpg">
             </div>
         </div>
     </section>
     <section class="user-rep">
-        <div class="review">
-            See our review
-        </div>
-        <div class="user-says">
-            What Our User Say About Us
-        </div>
-        <div class="user-says-image">
-            <img src="./img/rectangle_21.jpg">
-        </div>
-        <div class="description">
-            <div>
-                Best! I Got The House I Wanted Through Hounter
+        <div class="user-rep-div">
+            <div class="review">
+                See our review
             </div>
-            <div class="full-review">
-                Through this website I can get a house with the type and specifications I want <br> very easily, without a complicated process to be able to find information on the <br> house i want.
+            <div class="user-says">
+                What Our User Say About Us
             </div>
-            <div class="person">
-                <h5>Dianne Russell</h5>
-                <h6>Manager Director</h6>
-                <img src="./img/ellipse_6.jpg">
-                <img src="./img/bx_bxs-star.svg">
-                4.6
+            <div class="user-says-image">
+                <img src="./img/rectangle_21.jpg">
+                <div class="description-full">
+                    <div class="description-short">
+                        Best! I Got The House I Wanted Through Hounter
+                    </div>
+                    <div class="full-review">
+                        Through this website I can get a house with the type and specifications I want <br> very easily, without a complicated process to be able to find information on the <br> house i want.
+                    </div>
+                        <div class="pers-name">
+                            <div class="full-name-rev">
+                                <div class="name-rev">
+                                    Dianne Russell
+                                </div>
+                                <div class="surname-rev">
+                                    Manager Director
+                                </div>
+                            </div>
+                            <div class="rev-img">
+                                <img src="./img/ellipse_6.jpg" width="56" height="56">
+                            </div>
+                        </div>
+                        <div class="stars-rev">
+                            <img src="./img/bx_bxs-star.svg" width="28" height="28">
+                            <div class="rate">4.6</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -155,87 +221,103 @@
             <div class="tips-tricks">
                 See Tips and Tricks From Our Partnership
             </div>
-            <div>
+            <div class="tips-desc">
                 Find Out More About <br> Selling and Buying Homes
             </div>
-            <button>
-                <button type="button"> More Artikel </button>
-            </button>
+            <div class="more-art">
+                <button type="button" > More Artikel </button>
+            </div>
         </div>
         <div class="posts">
-            <div class="small-post">
-                <img src="./img/rectangle_22.jpg">
-                <div class="person short-person">
-                    <img src="./img/ellips_6_small.jpg">
-                    Diane Russell
-                    <h4>
-                        The Things We Need To Check When <br> We Want To Buy A Home
-                    </h4>
-                    <img src="./img/Vector.jpg">
-                    4 min read | 25 Apr 2021
+            <div class="small-posts">
+                <div class="small-post">
+                    <img src="./img/rectangle_22.jpg">
+                    <div class="short-person">
+                        <img src="./img/ellips_6_small.jpg" class="author-image">
+                        <div class="pers-tip-name">
+                            Diane Russell
+                        </div>
+                        <div class="post-title">
+                            The Things We Need To Check When <br> We Want To Buy A Home
+                        </div>
+                        <div class="img-tip">
+                            <img src="./img/Vector.jpg">
+                            4 min read | 25 Apr 2021
+                        </div>
+                    </div>
+                </div>
+                <div class="small-post">
+                    <img src="./img/rectangle_23.png">
+                    <div class="short-person">
+                        <img src="./img/ellipse_7.jpg" class="author-image">
+                        <div class="pers-tip-name">
+                            Courtney Henry
+                        </div>
+                        <div class="post-title">
+                            7 Ways to Distinguish The Quality Of <br> The House We Want To Buy
+                        </div>
+                        <div class="img-tip">
+                            <img src="./img/Vector.jpg">
+                            6 min read | 24 Apr 2021
+                        </div>
+                    </div>
+                </div>
+                <div class="small-post">
+                    <img src="./img/rectangle_24.jpg">
+                    <div class="short-person">
+                        <img src="./img/ellipse_8.jpg" class="author-image">
+                        <div class="pers-tip-name">
+                            Darlene Robertson
+                        </div> 
+                        <div class="post-title">
+                            The Best Way To Know The Quality Of <br> The House We Want To Buy
+                        </div>
+                        <div class="img-tip">
+                            <img src="./img/Vector.jpg">
+                            4 min read | 24 Apr 2021
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="small-post">
-                <img src="./img/rectangle_23.png">
-                <div class="person short-person">
-                    <img src="./img/ellipse_7.jpg">
-                    Courtney Henry
-                    <h4>
-                        7 Ways to Distinguish The Quality Of <br> The House We Want To Buy
-                    </h4>
+            <div class="big-post">
+                <img src="./img/rectangle_25.jpg">
+                <div class="big-short-person">
+                    <img src="./img/ellipse_9.jpg">
+                    <div class="big-post-name">
+                        Cameron Williamson
+                    </div>
+                    <div class="big-post-title">
+                        12 Things To Know before Buying A House
+                    </div>
+                    <div class="big-post-desc">
+                        Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house 
+                    </div>
+                </div>
+                <div class="big-post-img-tip">
                     <img src="./img/Vector.jpg">
-                    6 min read | 24 Apr 2021
+                    8 min read | 25 Apr 2021
                 </div>
             </div>
-            <div class="small-post">
-                <img src="./img/rectangle_24.jpg">
-                <div class="person short-person">
-                    <img src="./img/ellipse_8.jpg">
-                    Darlene Robertson
-                    <h4>
-                        The Best Way To Know The Quality Of <br> The House We Want To Buy
-                    </h4>
-                    <img src="./img/Vector.jpg">
-                    4 min read | 24 Apr 2021
-                </div>
-            </div>
-        </div>
-        <div class="big-post">
-            <img src="./img/rectangle_25.jpg">
-            <div class="person short-person">
-                <img src="./img/ellipse_9.jpg">
-                Cameron Williamson
-                <h4>
-                    12 Things To Know before Buying A House
-                </h4>
-                Want to buy a house but are unsure about what we should know, here I will try to <br> explainwhat we should know and check when we want to buy a house 
-            </div>
-            <img src="./img/Vector.jpg">
-            8 min read | 25 Apr 2021
         </div>
     </section>
     <section class="subscription">
         <div class="subscription-area">
-            <h1>
-                Subscribe For More Info <br> And Update From Hounter
-            </h1>
-            <img src="./img/eva_email-fill.svg">
-            <div class="email-input">
-                <input type="text">
-            </div>
-            <div class="button-email">
-                <button type="button" class="email-button"> 
-                    Subscribe Now
-                </button>
-            </div>
-            <div class="img-pos">
-                <img src="./img/rectangle_12.jpg">
-            </div>
-            <div class="img-pos">
-                <img src="./img/ellipse_6.jpg">
-            </div>
-            <div class="img-pos">
-                <img src="./img/ellipse_7.jpg">
+            <div class="subsc-title">
+                <div class="subs-title-div">
+                    Subscribe For More Info <br> And Update From Hounter
+                </div>
+                <img src="./img/eva_email-fill.svg" class="email-img">
+                <div class="email-input">
+                    <input type="text" placeholder="Your email here">
+                </div>
+                <div class="button-email">
+                    <button type="button" class="email-button"> 
+                        Subscribe Now
+                    </button>
+                </div>
+                <img src="./img/rectangle_12.jpg" class="email-photo1">
+                <img src="./img/ellipse_6.jpg" class="email-photo2">
+                <img src="./img/ellipse_7.jpg" class="email-photo3">
             </div>
         </div>
     </section>
@@ -243,9 +325,9 @@
         <div class="content">
             <div class="left-content">
                 <img src="./img/Logo_2.jpg">
-                <p>
+                <div class="foot-desc">
                     We provide information about properties such <br> as houses, villas and apartments to help people <br> find their dream home
-                </p>
+                </div>
                 <img src="./img/frame_20.jpg">
             </div>
         </div>
